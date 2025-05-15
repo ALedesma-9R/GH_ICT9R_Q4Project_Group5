@@ -130,6 +130,131 @@
 	
 </script>
 <!-- JS END -->
+
+	 <!-- NAVIGATION BAR -->
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark"> 
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">ZADG</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item"><a class="nav-link" href="#about">Home</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="projectDropdown" role="button" data-bs-toggle="dropdown">Projects</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" data-bs-toggle="tab" href="#q1pros">Quarter 1</a></li>
+            <li><a class="dropdown-item" data-bs-toggle="tab" href="#q2pros">Quarter 2</a></li>
+            <li><a class="dropdown-item" data-bs-toggle="tab" href="#q3pros">Quarter 3</a></li>
+            <li><a class="dropdown-item" data-bs-toggle="tab" href="#q4pros">Quarter 4</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#about">About the students</a></li>
+        <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#next">What's next</a></li>
+        <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#rate">Rate us</a></li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="text" placeholder="Search">
+        <button class="btn btn-primary" type="button">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<!-- END NAVIGATION -->
+
+<!-- TABS NAVIGATION -->
+<ul class="nav nav-tabs mt-3 container" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation"><button class="nav-link active" data-bs-toggle="tab" data-bs-target="#about" type="button">About</button></li>
+  <li class="nav-item" role="presentation"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#q1pros" type="button">Q1</button></li>
+  <li class="nav-item" role="presentation"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#q2pros" type="button">Q2</button></li>
+  <li class="nav-item" role="presentation"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#q3pros" type="button">Q3</button></li>
+  <li class="nav-item" role="presentation"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#q4pros" type="button">Q4</button></li>
+  <li class="nav-item" role="presentation"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#next" type="button">Next</button></li>
+  <li class="nav-item" role="presentation"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#rate" type="button">Rate Us</button></li>
+</ul>
+
+<!-- TAB CONTENT -->
+<div class="tab-content container mt-3" id="myTabContent">
+  <!-- ABOUT -->
+  <div class="tab-pane fade show active text-center" id="about" role="tabpanel">
+    <h2>Samantha Gabrielle Dela Cruz Nacino || Gab </h2>
+    <p>August 2 2010</p>
+    <p>Playing the violin</p>
+    <p>To become a friendlier person</p>
+
+    <h2>Dwayne Kyle Bolante Evangelista || Dwayne</h2>
+    <p>April 22 2010</p>
+    <p>Badminton and Rhythm Games</p>
+    <p>Get good at everything</p>
+
+    <h2>Aisha Ashley Opalla Ledesma || Ai </h2>
+    <p>March 24 2010</p>
+    <p>Watching interesting videos, neuroscience, environmental science</p>
+    <p>To get better at self-discipline and not being in my own head. 97-98 general avg. Join competitions that enhance thinking and win.</p>
+
+    <h2>Zakari Dylan Yu Dimaculangan || Zak</h2>
+    <p>December 1 2009</p>
+    <p>Playing online games</p>
+    <p>To become more responsible with growth</p>
+  </div>
+
+  <!-- Q1 -->
+  <div class="tab-pane fade text-center" id="q1pros" role="tabpanel">
+    <h3>Quarter 1 Projects Coming Soon!</h3>
+  </div>
+
+  <!-- Q2 -->
+  <div class="tab-pane fade text-center" id="q2pros" role="tabpanel">
+    <h3>Quarter 2 Projects Coming Soon!</h3>
+  </div>
+
+  <!-- Q3 -->
+  <div class="tab-pane fade text-center" id="q3pros" role="tabpanel">
+    <h3>Quarter 3 Projects Coming Soon!</h3>
+  </div>
+
+  <!-- Q4 -->
+  <div class="tab-pane fade text-center" id="q4pros" role="tabpanel">
+    <h3>Quarter 4 Projects Coming Soon!</h3>
+  </div>
+
+  <!-- What's Next -->
+  <div class="tab-pane fade text-center" id="next" role="tabpanel">
+    <h3>Exciting things ahead!</h3>
+  </div>
+
+  <!-- Rate Us -->
+  <div class="tab-pane fade text-center" id="rate" role="tabpanel">
+    <form class="mt-3">
+      <label for="name">Enter name:</label>
+      <input type="text" class="form-control" id="name" placeholder="First name"><br>
+
+      <label for="email">Enter email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Valid email address"><br>
+
+      <p>Are you from O.B.? If so, tell us your section and campus!</p>
+      <input type="radio" id="isOB" name="ob" value="isOB"> Yes
+      <input type="radio" id="isntOB" name="ob" value="isntOB"> No<br><br>
+
+      <label for="comments">Comments:</label>
+      <textarea id="comments" class="form-control" rows="5" placeholder="Suggestions, recommendations, personal comments? The team wants to hear you out!"></textarea>
+    </form>
+
+    <div class="mt-4">
+      <h4>References:</h4>
+      <p>Dimaculangan, Zakari | Evangelista, Dwayne | Ledesma, Aisha | Nacino, Gabrielle</p>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer mt-5 text-center">
+  <h2><a href="#rate">Our References</a> &#169; OBGH; ICT 9-R | Dimaculangan, Evangelista, Ledesma (leader), Nacino</h2>
+</div>
+
+</body>
+</html>
 	<div class="footer mt-5 text-center"><h2><a href="#rate">Our References</a>&#169; OBGH; ICT 9-R | Dimaculangan, Evangelista, Ledesma (leader), Nacino</h2></div>
  </body>
 </html>
