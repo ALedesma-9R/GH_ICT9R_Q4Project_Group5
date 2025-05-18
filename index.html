@@ -237,26 +237,101 @@
 	<!-- RATE US -->
   <div class="tab-pane fade container text-center" id="rate" role="tabpanel">
     <h1>Rate Us</h1>
-<div>
+<div class="form-container">
     <form>
-      <label for="name">Enter name:</label>
-      <input type="text" class="form-control" id="name" placeholder="First name"><br>
+		<!-- PART 1: FORM -->
+<div id="part2" class="form-part" style="display: none;">
+	<h2>PART 1: Your Information</h2>
+	<label for="name">Enter name:</label>
+	<input type="text" class="form-control" id="name" placeholder="First name">
 
-      <label for="email">Enter email:</label>
-      <input type="email" class="form-control" id="email" placeholder="Valid email address"><br>
+	<label for="email">Enter email:</label>
+	<input type="email" class="form-control" id="email" placeholder="Valid email address">
 
-      <p>Are you from O.B.? If so, tell us your section and campus!</p>
-      <input type="radio" id="isOB" name="ob" value="isOB">
-      <label for="isOB">Yes</label>
-      <input type="radio" id="isntOB" name="ob" value="isntOB">
-      <label for="isntOB">No</label><br><br>
+	<p>Are you from O.B.? If so, tell us your section and campus!</p>
+	<input type="radio" id="isOB" name="ob" value="isOB">
+	<label for="isOB">Yes</label>
+	<input type="radio" id="isntOB" name="ob" value="isntOB">
+	<label for="isntOB">No</label><br><br>
 
-      <textarea id="comments" class="form-control" rows="5" placeholder="Suggestions, recommendations, personal comments? The team wants to hear you out!"></textarea>
+	<textarea id="comments" class="form-control" rows="5" placeholder="Suggestions, recommendations, personal comments? The team wants to hear you out!"></textarea>
+</div>
+	    <!-- PART 2: FORM -->
+<div id="part2" class="form-part" style="display: none;">
+	<h2>PART 2: Ratings</h2>
+	<kbd>Tip! If you click the rating beside the name, you automatically rate all aspects!</kbd>
+
+<div class="row">
+  <div class="col-md-6">
+	<details>Nacino Rating:</details>
+	<br>
+	<label>Quarter 1 Projects: </label>
+	<input type="number">Q1 -- Nacino!</input>
+	<br>
+	<label>Quarter 2 Projects: </label>
+	<input type="number">Q2 -- Nacino!</input>
+	<label>Quarter 3 Projects: </label>
+	<input type="number">Q3 -- Nacino!</input>
+	<br>
+	<label>Quarter 4 Projects: </label>
+	<input type="number">Q4 -- Nacino!</input>
+  </div>
+  <div class="col-md-6">
+	<details>Ledesma Rating:</details>
+	<br>
+	<label>Quarter 1 Projects: </label>
+	<input type="number">Q1 -- Aisha!</input>
+	<br>
+	<label>Quarter 2 Projects: </label>
+	<input type="number">Q2 -- Aisha!</input>
+	<label>Quarter 3 Projects: </label>
+	<input type="number">Q3 -- Aisha!</input>
+	<br>
+	<label>Quarter 4 Projects: </label>
+	<input type="number">Q4 -- Aisha!</input>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-6">
+	<details>Evangelista Rating:</details>
+	<br>
+	<label>Quarter 1 Projects: </label>
+	<input type="number">Q1 -- Dwayne!</input>
+	<br>
+	<label>Quarter 2 Projects: </label>
+	<input type="number">Q2 -- Dwayne!</input>
+	<label>Quarter 3 Projects: </label>
+	<input type="number">Q3 -- Dwayne!</input>
+	<br>
+	<label>Quarter 4 Projects: </label>
+	<input type="number">Q4 -- Dwayne!</input>
+  </div>
+  <div class="col-md-6">
+	<details>Dimaculangan Rating:</details>
+	<br>
+	<label>Quarter 1 Projects: </label>
+	<input type="number">Q1 -- Zak!</input>
+	<br>
+	<label>Quarter 2 Projects: </label>
+	<input type="number">Q2 -- Zak!</input>
+	<label>Quarter 3 Projects: </label>
+	<input type="number">Q3 -- Zak!</input>
+	<br>
+	<label>Quarter 4 Projects: </label>
+	<input type="number">Q4 -- Zak!</input>
+  </div>
+</div>
+
+	<details>Dimaculangan Rating:</details>
+	<input type="number">Give Zak a rating!</input>
+</div>
+
 	<hr>
-
+	<button onclick="changePage()">Change Page</button>
+	<button class="btn btn-primary" onclick="clear()">Clear Form</button>
 	<button class="btn btn-primary" onclick="submission()">Submit</button>
     </form>
-</div>
+</div> <!-- END OF FORM CONTAINER -->
 
     <div class="mt-4 references">
       <h4>References:</h4>
@@ -272,15 +347,22 @@
 <!-- JS -->
 <script>
 submission() {
+	//Star ratings
 	var zakStar = document.getElementById('zStar').value; //each of the star values are collected before they are added then divided to get the avg
 	var aisStar = document.getElementById('aStar').value;
 	var dwaStar = document.getElementById('dStar').value;
 	var gabStar = document.getElementById('gStar').value;
 	let starAvg = (Number(zakStar)+Number(aisStar)+Number(dwaStar)+Number(gabStar)) / 4;
+
+	//Person information
+	var gabStar = document.getElementById('gStar').value;
 	let obStud = document.getElementById('obStud').value;
 
+	//Submission acceptance
+	window.alert("You have submitted the form! Dear, " + name + "Thank you.");
 	document.getElementById("submissionMessage").innerText = "You have rated us, " + obStud + "\"name\"" + ", an average of: " + starAvg + " stars!";
 
+	//Reaction!
 	if (starAvg <=1) {
 		document.getElementById('ratingMsg').innerText="That's below even the 1's range! We see we have performed drastically poor and will do our best to achieve your satisfaction and our ambitions!";
 	}
@@ -308,6 +390,6 @@ submission() {
 </script>
 
 <!-- FOOTER -->
-	<div class="footer mt-5 text-center"><a href="#rate">Our References</a><h2>  || &#169; OBGH; ICT 9-R | Dimaculangan, Evangelista, Ledesma (leader), Nacino</h2></div>
+	<div class="footer mt-5 text-center"><a href="#rate">Our References</a>  || &#169; OBGH; ICT 9-R | Dimaculangan, Evangelista, Ledesma (leader), Nacino</h2></div>
  </body>
 </html>
