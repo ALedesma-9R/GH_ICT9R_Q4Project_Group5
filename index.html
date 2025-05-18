@@ -145,14 +145,14 @@
           <a class="nav-link dropdown-toggle" href="#" id="projectsDropdown" role="button" data-bs-toggle="dropdown">
 		Projects</a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#q1-tab">Quarter 1</a></li>
-            <li><a class="dropdown-item" href="#q2-tab">Quarter 2</a></li>
-            <li><a class="dropdown-item" href="#q3-tab">Quarter 3</a></li>
-            <li><a class="dropdown-item" href="#q4-tab">Quarter 4</a></li>
+            <li><a class="dropdown-item" href="#q1">Quarter 1</a></li>
+            <li><a class="dropdown-item" href="#q2">Quarter 2</a></li>
+            <li><a class="dropdown-item" href="#q3">Quarter 3</a></li>
+            <li><a class="dropdown-item" href="#q4">Quarter 4</a></li>
           </ul>
         </li>
-        <li class="nav-item"><a class="nav-link" href="#next-tab">What's next</a></li>
-        <li class="nav-item"><a class="nav-link" href="#rate-tab">Rate us</a></li>
+        <li class="nav-item"><a class="nav-link" href="#next">What's next</a></li>
+        <li class="nav-item"><a class="nav-link" href="#rate">Rate us</a></li>
       </ul>
 
       <form class="d-flex">
@@ -172,9 +172,11 @@
   <div class="tab-pane fade show active container text-center" id="about" role="tabpanel">
 	<p>Hello there, and welcome!</p>
 	<p>We are Group#4 of ICT9-Ruby!! Thank you for visiting our profile. Here's a quick navigation <u>&</u> explanation on each section of this wonderful website!</p>
-	<a href=""></a>
-	<a href=""></a>
-	
+	<li></li>
+	<li><a href="#q1"></a></li>
+	<li><a href="#q2"></a></li>
+	<li><a href="#q3"></a></li>
+	<li><a href="#q4"></a></li>
 
     	<img src="">
 	<h2>Samantha Gabrielle Dela Cruz Nacino || Gab </h2>
@@ -205,6 +207,7 @@
 <div class="tab-pane fade container text-center" id="q1pros" role="tabpanel">
     <h2>Q1 Projects</h2>
     <p>Coming soon...</p>
+	<p></p>
 </div>
 
 	<!-- Q2 PROJS-->
@@ -268,16 +271,40 @@
 
 <!-- JS -->
 <script>
-	submission() {
-	function 
-		
-	 if () {
-	  
-	 }
-	 else {
-	  
-	 }
+submission() {
+	var zakStar = document.getElementById('zStar').value; //each of the star values are collected before they are added then divided to get the avg
+	var aisStar = document.getElementById('aStar').value;
+	var dwaStar = document.getElementById('dStar').value;
+	var gabStar = document.getElementById('gStar').value;
+	let starAvg = (Number(zakStar)+Number(aisStar)+Number(dwaStar)+Number(gabStar)) / 4;
+	let obStud = document.getElementById('obStud').value;
+
+	document.getElementById("submissionMessage").innerText = "You have rated us, " + obStud + "\"name\"" + ", an average of: " + starAvg + " stars!";
+
+	if (starAvg <=1) {
+		document.getElementById('ratingMsg').innerText="That's below even the 1's range! We see we have performed drastically poor and will do our best to achieve your satisfaction and our ambitions!";
 	}
+			
+	else if (starAvg >1 && starAvg <1.9) {
+		document.getElementById('ratingMsg').innerText="That's in the 2's range! We see we have performed poorly and will do our best to achieve your satisfaction and our ambitions!";
+	}
+			
+	else if (starAvg >2 && starAvg <2.9) {
+		document.getElementById('ratingMsg').innerText="That's in the 3's range! We see that our work would need improvements, and will do our best to achieve your satisfaction and our ambitions!";
+	}
+
+	else if (starAvg >3 && starAvg <3.9) {
+		document.getElementById('ratingMsg').innerText="That's in the 3's range! We see that our work is.. decent! And that <bold><em><u>is</u></em><bold> hopeful, so we will do our best to achieve your satisfaction and our ambitions!";
+	}
+		
+	else if (starAvg >4 && starAvg <4.9) {
+		document.getElementById('ratingMsg').innerText="That's in the 4's range! We see that our work would need improvements, and will do our best to achieve your satisfaction and our ambitions!";
+	}
+
+	else (starAvg = 5) {
+		document.getElementById('ratingMsg').innerText="That's.. 5!! Perfect rating?! Wow!! We see that our work has genuinely impressed you, and we will continue performing at this level to achieve your satisfaction and our ambitions!";
+	}
+}
 </script>
 
 <!-- FOOTER -->
