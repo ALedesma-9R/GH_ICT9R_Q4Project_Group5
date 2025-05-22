@@ -5,8 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- BS SETUP -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QZzKkzK3XxYhzElyYHi6FJ8WxJxDLuvmt2Ay5c4+dqvZn1PUhx4JfFq7U0ozLt0k" crossorigin="anonymous">
+	
 	<!-- JS SETUP -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
@@ -71,11 +71,18 @@
   <div class="tab-pane fade show active container text-center" id="home" role="tabpanel">
 	<p>Hello there, and welcome!</p>
 	<p>We are Group#4 of ICT9-Ruby!! Thank you for visiting our profile. Here's a quick navigation <u>&</u> explanation on each section of this wonderful website!</p>
-	<li></li>
-	<li><a href="#q1"></a></li>
-	<li><a href="#q2"></a></li>
-	<li><a href="#q3"></a></li>
-	<li><a href="#q4"></a></li>
+	<ul>
+	<li><a href="home">Home</a> <-- <u>This page!</u></li>
+	<li>Projects</li>
+		<ul>
+		<li><a href="#q1"></a>1st Quarter Projects</li>
+		<li><a href="#q2"></a>2nd Quarter Projects</li>
+		<li><a href="#q3"></a>3rd Quarter Projects</li>
+		<li><a href="#q4"></a>4th Quarter Projects</li>
+		</ul>
+	<li><a href="#next">What's Next</a></li>
+	<li><a href="#rate">Rate Us</a></li>
+	</ul>
 
     	<img src="">
 	<h2>Samantha Gabrielle Dela Cruz Nacino || Gab </h2>
@@ -151,16 +158,13 @@
     	<p>Staying OBGH SY 25-26</p>
     	<p>I like the ICT topics</p>
     	<p>I'm expecting much more collaborative activities in projects and work</p>
-  
-
-	  
   </div>
 
 	<!-- RATE US -->
-  <div class="tab-pane fade container text-center" id="rate" role="tabpanel">
+<div class="tab-pane fade container text-center" id="rate" role="tabpanel">
     <h1>Rate Us</h1>
-<div class="form-container">
-    <form>
+
+	<div class="form-container"><form>
 		<!-- PART 1: FORM -->
 <div id="part2" class="form-part" style="display: none;">
 	<h2>PART 1: Your Information</h2>
@@ -243,13 +247,11 @@
 	<input type="number" placeholder="Q4 -- Zak!"></input>
   </div>
 </div>
-
 	<hr>
 	<button onclick="changePage()">Change Page</button>
 	<button class="btn btn-primary" onclick="clear()">Clear Form</button>
 	<button class="btn btn-primary" onclick="submission()">Submit</button>
-    </form>
-</div> <!-- END OF FORM CONTAINER -->
+</form></div> <!-- END OF FORM CONTAINER -->
 
     <div class="mt-4 references">
       <h4>References:</h4>
