@@ -20,25 +20,23 @@
 <nav>
  <ul class="nav nav-tabs" id="myTab" role="tablist">
 	<li class="nav-item" role="presentation">
-		<button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#" type="button" role="tab" aria-controls="home" aria-selected="true">Home</button>
+		<button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab">Home</button>
 	</li>
- 	<li class="nav-item dropdown" role="presentation">
+ 	<li class="nav-item dropdown" role="presentation"> <!-- DROPDOWN -->
 		<button class="nav-link dropdown-toggle" data-bs-toggle="dropdown" type="button" role="tab">
 		Projects
     		</button>
 		 <ul class="dropdown-menu">
 			<li>
-			        <a class="dropdown-item" id="profile-tab" data-bs-toggle="tab" href="#profile" role="tab"
-			          aria-controls="profile" aria-selected="false">Profile</a>
-				<a class="dropdown-item" id="profile-tab" data-bs-toggle="tab" href="#profile" role="tab"
-			          aria-controls="profile" aria-selected="false">Profile</a>
-				<a class="dropdown-item" id="profile-tab" data-bs-toggle="tab" href="#profile" role="tab"
-			          aria-controls="profile" aria-selected="false">Profile</a>
+			        <a class="dropdown-item nav-link" id="q1pros" data-bs-toggle="tab" href="#q1pros" role="tab">Q1 Projects</a>
+				<a class="dropdown-item nav-link" id="q2pros" data-bs-toggle="tab" href="#q2pros" role="tab">Q2 Projects</a>
+				<a class="dropdown-item" id="q3pros" data-bs-toggle="tab" href="#q3pros" role="tab">Q3 Projects</a>
+				<a class="dropdown-item" id="q4pros" data-bs-toggle="tab" href="#q4pros" role="tab">Q4 Projects</a>
 			</li>
 		 </ul>
 	</li>
-	<li class="nav-item" role="presentation">
-	<button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#" type="button" role="tab" aria-controls="home" aria-selected="true">What's Next</button>
+	<li class="nav-item" role="presentation"> <!-- NEXT & OTHER TABS -->
+		<button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#" type="button" role="tab" aria-controls="home" aria-selected="true">What's Next</button>
 	</li>
 	<li class="nav-item" role="presentation">
 		<button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#" type="button" role="tab" aria-controls="home" aria-selected="true">Rate Us</button>
@@ -68,7 +66,7 @@
 <!-- TAB CONTENT -->
 <div class="tab-content container mt-3" id="myTabContent">
   <!-- ABOUT -->
-<div class="tab-content" id="myTabContent">
+<div class="tab-content">
   <div class="tab-pane fade show active container text-center" id="home" role="tabpanel">
 	<p>Hello there, and welcome! We are Group#4 of ICT9-Ruby.
 		We learned a lot this year, wayy too much we'd say.
@@ -140,7 +138,7 @@
 </div>
 
 	<!-- WHAT'S NEXT -->
-  <div class="tab-pane fade container text-center" id="#next" role="tabpanel">
+  <div class="tab-pane fade container text-center" id="next" role="tabpanel">
     <h2>What's Next</h2>
     <p>Stay tuned for more updates!</p>
 
@@ -166,7 +164,7 @@
   </div>
 
 	<!-- RATE US -->
-<div class="tab-pane fade container text-center" id="#rate" role="tabpanel">
+<div class="tab-pane fade container text-center" id="rate" role="tabpanel">
     <h1>Rate Us</h1>
 
 	<div class="form-container"><form>
