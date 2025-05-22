@@ -18,10 +18,10 @@
 </head>
  <body>
 <!-- NAVBAR -->
-<nav>
+<nav class="main-nav">
  <ul class="nav nav-tabs" id="myTab" role="tablist">
 	<li class="nav-item" role="presentation">
-		<button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab">Home</button>
+		<button class="nav-link active" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab">Home</button>
 	</li>
  	<li class="nav-item dropdown" role="presentation"> <!-- DROPDOWN -->
 		<button class="nav-link dropdown-toggle" data-bs-toggle="dropdown" type="button" role="tab">
@@ -29,24 +29,24 @@
     		</button>
 		 <ul class="dropdown-menu">
 			<li>
-			        <a class="dropdown-item nav-link" id="q1pros" data-bs-toggle="tab" href="#q1pros" role="tab">Q1 Projects</a>
-				<a class="dropdown-item nav-link" id="q2pros" data-bs-toggle="tab" href="#q2pros" role="tab">Q2 Projects</a>
-				<a class="dropdown-item" id="q3pros" data-bs-toggle="tab" href="#q3pros" role="tab">Q3 Projects</a>
-				<a class="dropdown-item" id="q4pros" data-bs-toggle="tab" href="#q4pros" role="tab">Q4 Projects</a>
+			        <a class="dropdown-item nav-link" data-bs-toggle="tab" href="#q1pros" role="tab">Q1 Projects</a>
+				<a class="dropdown-item" data-bs-toggle="tab" href="#q2pros" role="tab">Q2 Projects</a>
+				<a class="dropdown-item" data-bs-toggle="tab" href="#q3pros" role="tab">Q3 Projects</a>
+				<a class="dropdown-item" data-bs-toggle="tab" href="#q4pros" role="tab">Q4 Projects</a>
 			</li>
 		 </ul>
 	</li>
 	<li class="nav-item" role="presentation"> <!-- NEXT & OTHER TABS -->
-		<button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#" type="button" role="tab" aria-controls="home" aria-selected="true">What's Next</button>
+		<button class="nav-link" data-bs-toggle="tab" data-bs-target="#next" type="button" role="tab">What's Next</button>
 	</li>
 	<li class="nav-item" role="presentation">
-		<button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#" type="button" role="tab" aria-controls="home" aria-selected="true">Rate Us</button>
+		<button class="nav-link" data-bs-toggle="tab" data-bs-target="#rate" type="button" role="tab">Rate Us</button>
 	</li>
 </ul>
 </nav>
 	    
 <!-- SECONDARY NAV -->
-<nav>
+<nav class="secondary-nav">
 		<!-- Previous button -->
 	<button class="btn p-0 border-0 bg-transparent">
 	  <i class="bi bi-arrow-left-circle" style="font-size: 1.5rem;">Previous Tab</i>
@@ -173,15 +173,15 @@
 <div id="part2" class="form-part" style="display: none;">
 	<h2>PART 1: Your Information</h2>
 	<label for="name">Enter name:</label>
-	<input type="text" class="form-control" id="uname" placeholder="First name">
+	<input type="text" class="form-control" id="name" placeholder="First name">
 
 	<label for="email">Enter email:</label>
 	<input type="email" class="form-control" id="email" placeholder="Valid email address">
 
 	<p>Are you from O.B.? If so, tell us your section and campus!</p>
-	<input type="radio" id="isOB" name="ob" value="isOB">
+	<input type="radio" id="isOB" name="obStud" value="isOB">
 	<label for="isOB">Yes</label>
-	<input type="radio" id="isntOB" name="ob" value="isntOB">
+	<input type="radio" id="isntOB" name="obStud" value="isntOB">
 	<label for="isntOB">No</label><br><br>
 
 	<textarea id="comments" class="form-control" rows="5" placeholder="Suggestions, recommendations, personal comments? The team wants to hear you out!"></textarea>
@@ -193,63 +193,63 @@
 
 <div class="row">
  <div class="col-md-6">
-	<details>Nacino Rating:></details>
+	<details>🩷 Nacino Rating:></details>
 	<br>
-	<label>Quarter 1 Projects: ></label>
-	<input type="number" placeholder="Q1 -- Gabrielle!"></input>
+	<label>Quarter 1 Projects: </label>
+	<input type="number" placeholder="Q1 -- Gabrielle!" id="member1_1" //>
 	<br>
-	<label>Quarter 2 Projects: ></label>
-	<input type="number" placeholder="Q2 -- Gabrielle!"></input>
-	<label>Quarter 3 Projects: ></label>
-	<input type="number" placeholder="Q3 -- Gabrielle!"></input>
+	<label>Quarter 2 Projects: </label>
+	<input type="number" placeholder="Q2 -- Gabrielle!" id="member1_2" />
+	<label>Quarter 3 Projects: </label>
+	<input type="number" placeholder="Q3 -- Gabrielle!" id="member1_3" />
 	<br>
-	<label>Quarter 4 Projects: ></label>
-	<input type="number" placeholder="Q4 -- Gabrielle!"></input>
+	<label>Quarter 4 Projects: </label>
+	<input type="number" placeholder="Q4 -- Gabrielle!" id="member1_4" />
   </div>
   <div class="col-md-6">
-	<details>Ledesma Rating:></details>
+	<details>🟧 Ledesma Rating:></details>
 	<br>
 	<label>Quarter 1 Projects: ></label>
-	<input type="number" placeholder="Q1 -- Aisha!"></input>
+	<input type="number" placeholder="Q1 -- Aisha!" id="member2_1" />
 	<br>
 	<label>Quarter 2 Projects: ></label>
-	<input type="number" placeholder="Q2 -- Aisha!"></input>
+	<input type="number" placeholder="Q2 -- Aisha!"id="member2_2" />
 	<label>Quarter 3 Projects: ></label>
-	<input type="number" placeholder="Q3 -- Aisha!"></input>
+	<input type="number" placeholder="Q3 -- Aisha!" id="member2_3" />
 	<br>
 	<label>Quarter 4 Projects: ></label>
-	<input type="number" placeholder="Q4 -- Aisha!"></input>
+	<input type="number" placeholder="Q4 -- Aisha!"  id="member2_4" />
   </div>
 </div>
 	
 <div class="row">
   <div class="col-md-6">
-	<details>Evangelista Rating:></details>
+	<details>🔷 Evangelista Rating:></details>
 	<br>
 	<label>Quarter 1 Projects: </label>
-	<input type="number" placeholder="Q1 -- Dwayne!"></input>
+	<input type="number" placeholder="Q1 -- Dwayne!" id="member3_1" />
 	<br>
 	<label>Quarter 2 Projects: </label>
-	<input type="number" placeholder="Q2 -- Dwayne!"></input>
+	<input type="number" placeholder="Q2 -- Dwayne!" id="member3_2" />
 	<label>Quarter 3 Projects: ></label>
-	<input type="number" placeholder="Q3 -- Dwayne!"></input>
+	<input type="number" placeholder="Q3 -- Dwayne!" id="member3_3" />
 	<br>
 	<label>Quarter 4 Projects: </label>
-	<input type="number" placeholder="Q4 -- Dwayne!"></input>
+	<input type="number" placeholder="Q4 -- Dwayne!" id="member3_4" />
   </div>
   <div class="col-md-6">
-	<details>Dimaculangan Rating:></details>
+	<details>🟤 Dimaculangan Rating:></details>
 	<br>
 	<label>Quarter 1 Projects: </label>
-	<input type="number" placeholder="Q1 -- Zak!"></input>
+	<input type="number" placeholder="Q1 -- Zak!" id="member4_1" />
 	<br>
 	<label>Quarter 2 Projects: </label>
-	<input type="number" placeholder="Q2 -- Zak!"></input>
+	<input type="number" placeholder="Q2 -- Zak!" id="member4_2" />
 	<label>Quarter 3 Projects: </label>
-	<input type="number" placeholder="Q3 -- Zak!"></input>
+	<input type="number" placeholder="Q3 -- Zak!" id="member4_3" />
 	<br>
 	<label>Quarter 4 Projects: </label>
-	<input type="number" placeholder="Q4 -- Zak!"></input>
+	<input type="number" placeholder="Q4 -- Zak!" id="member4_4" />
   </div>
 </div>
 	<hr>
@@ -257,11 +257,6 @@
 	<button class="btn btn-primary" onclick="clear()">Clear Form</button>
 	<button class="btn btn-primary" onclick="submission()">Submit</button>
 </form></div> <!-- END OF FORM CONTAINER -->
-
-<div class="return">
-	<h2 class="submissionMessage"></h2>
-	<p class="ratingMessage"></p>
-</div>
 
     <div class="mt-4 references">
       <h4>References:</h4>
@@ -277,21 +272,50 @@
 <!-- JS -->
 <script>
 submission() {
-	//Star ratings
-	var zakStar = document.getElementById('zStar').value; //each of the star values are collected before they are added then divided to get the avg
-	var aisStar = document.getElementById('aStar').value;
-	var dwaStar = document.getElementById('dStar').value;
-	var gabStar = document.getElementById('gStar').value;
-	let starAvg = (Number(zakStar)+Number(aisStar)+Number(dwaStar)+Number(gabStar)) / 4;
+	//Star Ratings
+	function showAverages() {
+ // Gabrielle Calcs
+	let g1 = Number(document.getElementById("member1_1").value);  //each of the star values are collected before they are added then divided to get the avg
+	let g2 = Number(document.getElementById("member1_2").value)
+	let g3 = Number(document.getElementById("member1_3").value);
+	let g4 = Number(document.getElementById("member1_4").value);
+	let gabrielleTotal = g1 + g2 + g3 + g4;
+	let gabrielleAverage = gabStar / 4;
 
+  // Aisha Calc
+	let a1 = Number(document.getElementById("member2_1").value);
+	let a2 = Number(document.getElementById("member2_2").value);
+	let a3 = Number(document.getElementById("member2_3").value);
+	let a4 = Number(document.getElementById("member2_4").value);
+	let aishaTotal = a1 + a2 + a3 + a4;
+	let aishaAverage = shaStar / 4;
+
+  // Dwayne calcs
+	let d1 = Number(document.getElementById("member3_1").value);
+	let d2 = Number(document.getElementById("member3_2").value);
+  	let d3 = Number(document.getElementById("member3_3").value);
+  	let d4 = Number(document.getElementById("member3_4").value);
+  	let dwayneTotal = d1 + d2 + d3 + d4;
+  	let dwayneAverage = dwaStar / 4;
+
+  // Zak Calcs
+	let z1 = Number(document.getElementById("member4_1").value);
+	let z2 = Number(document.getElementById("member4_2").value);
+	let z3 = Number(document.getElementById("member4_3").value);
+	let z4 = Number(document.getElementById("member4_4").value);
+	let zakTotal = z1 + z2 + z3 + z4;
+	let zakAverage = zakStar / 4;
+
+	let starOutput = (Number(zakStar)+Number(dwaStar)+Number(shaStar)+Number(gabStar))/4;
+	let starAvg = starOutput.toFixed(2);
 	//Person information
-	let name = document.getElementById('uname').value;
-	let school = document.querySelector('input[name="obStud"]:checked')?.value;
+	let name = document.getElementById('name').value;
+	let obStud = document.getElementById('obStud').value;
 
 	//Submission acceptance
-	window.alert("You have submitted the form! Dear, " + name + "! Thank you.");
+	window.alert("You have submitted the form! Dear, " + name + "Thank you.");
 	document.getElementById("submissionMessage").innerText = "You have rated us, " + obStud + "\"name\"" + ", an average of: " + starAvg + " stars!";
-
+	
 	//Reaction!
 	if (starAvg <=1) {
 		document.getElementById('ratingMsg').innerText="That's below even the 1's range! We see we have performed drastically poor and will do our best to achieve your satisfaction and our ambitions!";
