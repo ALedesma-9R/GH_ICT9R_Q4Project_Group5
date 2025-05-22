@@ -49,7 +49,7 @@
 	<div>
 		<a href="#" class="previous">&laquo; Previous Tab</a>
 		<a href="#" class="next">Next Tab &raquo;</a>
-		v<i class="fa fa-refresh" aria-hidden="true"></i>
+		<button type="button" class="btn btn-primary" onclick="window.location.reload()">Refresh</button>
 	</div>
 	<form class="d-flex" role="search">
 		<input class="form-control me-2" type="search" placeholder="Search">
@@ -365,7 +365,6 @@
 </div>
 
 		<hr>
-	<button onclick="changePage()">Change Page</button>
 	<button class="btn btn-primary" onclick="clear()">Clear Form</button>
 	<button class="btn btn-primary" onclick="submission()">Submit</button>
 </div>
@@ -455,6 +454,10 @@ submission() {
 		document.getElementById('ratingMsg').innerText="That's.. 5!! Perfect rating?! Wow!! We see that our work has genuinely impressed you, and we will continue performing at this level to achieve your satisfaction and our ambitions!";
 	}
 }
+
+ function clearForm() {
+    document.getElementById("myForm").reset();
+  }
 </script>
 
 <!-- FOOTER -->
