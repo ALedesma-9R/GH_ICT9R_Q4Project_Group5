@@ -173,7 +173,7 @@
 <div id="part2" class="form-part" style="display: none;">
 	<h2>PART 1: Your Information</h2>
 	<label for="name">Enter name:</label>
-	<input type="text" class="form-control" id="name" placeholder="First name">
+	<input type="text" class="form-control" id="uname" placeholder="First name">
 
 	<label for="email">Enter email:</label>
 	<input type="email" class="form-control" id="email" placeholder="Valid email address">
@@ -258,6 +258,11 @@
 	<button class="btn btn-primary" onclick="submission()">Submit</button>
 </form></div> <!-- END OF FORM CONTAINER -->
 
+<div class="return">
+	<h2 class="submissionMessage"></h2>
+	<p class="ratingMessage"></p>
+</div>
+
     <div class="mt-4 references">
       <h4>References:</h4>
 	<p><i class="fa-solid fa-envelope-circle-check"></i>dimaculangan.zy@obmontessori.edu.ph, <a href="https://github.com/ZakariDimaculangan"><i class="fa-brands fa-github"></i>ZDimaculangan-9R</a>|| Dimaculangan, Zakari</p>
@@ -280,11 +285,11 @@ submission() {
 	let starAvg = (Number(zakStar)+Number(aisStar)+Number(dwaStar)+Number(gabStar)) / 4;
 
 	//Person information
-	var gabStar = document.getElementById('gStar').value;
-	let obStud = document.getElementById('obStud').value;
+	let name = document.getElementById('uname').value;
+	let school = document.querySelector('input[name="obStud"]:checked')?.value;
 
 	//Submission acceptance
-	window.alert("You have submitted the form! Dear, " + name + "Thank you.");
+	window.alert("You have submitted the form! Dear, " + name + "! Thank you.");
 	document.getElementById("submissionMessage").innerText = "You have rated us, " + obStud + "\"name\"" + ", an average of: " + starAvg + " stars!";
 
 	//Reaction!
