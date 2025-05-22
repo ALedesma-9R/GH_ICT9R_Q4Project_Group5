@@ -2,23 +2,43 @@
       overflow: hidden;
       background-color:#FFFFC5;
       font-family: Arial;
+      display: flex;
+      gap: 15px;
     }
 
-.navbar a {
+.upper-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background: #f2f2f2;
       float: left;
       font-size: 16px;
       color: white;
       text-align: center;
       padding: 14px 16px;
       text-decoration: none;
-    }
+  }
 
-.dropdown {
+  .secondary-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #e6e6e6;
+  }
+
+  .buttons {
+    display: flex;
+    gap: 10px;
+  }
+
+  .search input {
+    padding: 5px 10px;
+  }
+.dropdown .dropbtn {
       float: left;
       overflow: hidden;
-    }
-
-.dropdown .dropbtn {
       font-size: 16px;
       border: none;
       outline: none;
@@ -29,7 +49,7 @@
       margin: 0; 
     }
 
-    .navbar a:hover, .dropdown:hover .dropbtn {
+    .upper-nav:hover, .dropdown:hover .dropbtn {
       background-color: floralwhite;
     }
 
