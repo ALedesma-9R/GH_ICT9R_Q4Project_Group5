@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- BS SETUP -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+	<!-- JS SETUP -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" type="text/css" href="styles.css">
+
+	<title>ZADG Profile(Q4 Project)</title>
+</head>
+ <body>
+<!-- NAVIGATION BAR -->
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark"> 
+     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+	 <li class="nav-item">
+      <a class="nav-link" href="Projects.html">Projects</a>
+  </li>
+   <li class="nav-item">
+          <a class="nav-link" href="Next.html">What's next</a>
+        </li>
+<li class="nav-item">
+          <a class="nav-link" href="Rate.html">Rate us</a>
+</li>
+
+      <form class="d-flex">
+        <input class="form-control me-2" type="text" placeholder="Search">
+        <button class="btn btn-primary" type="button">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<!-- RATE US -->
+<div id="rate" class="container tab-pane active text-center">
+  <form>
+  <label for="name">Enter name:</label>
+  <input type="text" class="form-control" id="name" placeholder="First name">
+    <br>
+  <label for="email">Enter email:</label>
+  <input type="number" class="form-control" id="email" placeholder="Valid email address">
+    <br>
+  <label for="school_info"><p>Are you from O.B.? If so, tell us your section and campus!</p>
+<input type="radio" id="isOB" name="obStud" value="isOB">
+  <label for="isOB">Yes, I'm from OB!</label><br>
+  <input type="radio" id="notOB" name="obStud" value="notOB">
+  <label for="notOB">Nope, just visiting!</label>
+</div>
+   
+   <div id="part2" class="form-part">
+          <h2>PART 2: Feedback</h2>
+
+  <div id="part2" class="form-part" style="display: none;">
+  <h2>PART 2: Ratings</h2>
+  <kbd>Tip! If you click the rating beside the name, you automatically rate all aspects!</kbd>
+
+<div class="row">
+ <div class="col-md-6">
+  <details>🩷 Nacino Rating:></details>
+  <br>
+  <label>Quarter 1 Projects: </label>
+  <input type="number" placeholder="Q1 -- Gabrielle!" id="member1_1" //>
+  <br>
+  <label>Quarter 2 Projects: </label>
+  <input type="number" placeholder="Q2 -- Gabrielle!" id="member1_2" />
+  <label>Quarter 3 Projects: </label>
+  <input type="number" placeholder="Q3 -- Gabrielle!" id="member1_3" />
+  <br>
+  <label>Quarter 4 Projects: </label>
+  <input type="number" placeholder="Q4 -- Gabrielle!" id="member1_4" />
+  </div>
+  <div class="col-md-6">
+  <details>🟧 Ledesma Rating:></details>
+  <br>
+  <label>Quarter 1 Projects: ></label>
+  <input type="number" placeholder="Q1 -- Aisha!" id="member2_1" />
+  <br>
+  <label>Quarter 2 Projects: ></label>
+  <input type="number" placeholder="Q2 -- Aisha!"id="member2_2" />
+  <label>Quarter 3 Projects: ></label>
+  <input type="number" placeholder="Q3 -- Aisha!" id="member2_3" />
+  <br>
+  <label>Quarter 4 Projects: ></label>
+  <input type="number" placeholder="Q4 -- Aisha!"  id="member2_4" />
+  </div>
+</div>
+  
+<div class="row">
+  <div class="col-md-6">
+  <details>🔷 Evangelista Rating:></details>
+  <br>
+  <label>Quarter 1 Projects: </label>
+  <input type="number" placeholder="Q1 -- Dwayne!" id="member3_1" />
+  <br>
+  <label>Quarter 2 Projects: </label>
+  <input type="number" placeholder="Q2 -- Dwayne!" id="member3_2" />
+  <label>Quarter 3 Projects: ></label>
+  <input type="number" placeholder="Q3 -- Dwayne!" id="member3_3" />
+  <br>
+  <label>Quarter 4 Projects: </label>
+  <input type="number" placeholder="Q4 -- Dwayne!" id="member3_4" />
+  </div>
+  <div class="col-md-6">
+  <details>🟤 Dimaculangan Rating:></details>
+  <br>
+  <label>Quarter 1 Projects: </label>
+  <input type="number" placeholder="Q1 -- Zak!" id="member4_1" />
+  <br>
+  <label>Quarter 2 Projects: </label>
+  <input type="number" placeholder="Q2 -- Zak!" id="member4_2" />
+  <label>Quarter 3 Projects: </label>
+  <input type="number" placeholder="Q3 -- Zak!" id="member4_3" />
+  <br>
+  <label>Quarter 4 Projects: </label>
+  <input type="number" placeholder="Q4 -- Zak!" id="member4_4" />
+  </div>
+</div>
+
+    <hr>
+  <button class="btn btn-primary" onclick="clear()">Clear Form</button>
+  <button class="btn btn-primary" onclick="submission()">Submit</button>
+</div>
+      </form>
+    </div>
+  </div>
+</div> 
+
+
+<div class="footer mt-5 text-center"><a href="#rate">Our References</a>  || &#169; OBGH; ICT 9-R | Dimaculangan, Evangelista, Ledesma (leader), Nacino</h2></div>
+</body>
