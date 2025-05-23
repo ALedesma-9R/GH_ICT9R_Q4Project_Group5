@@ -1,127 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
 
-
-/* General Page Setup */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f8f9fa;
-  color: #212529;
-  line-height: 1.6;
-  padding-top: 70px; /* Prevent overlap with navbar */
-}
-
-/* Navbar Customization */
-.navbar {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.navbar-nav .nav-link {
-  color: #ffffff !important;
-  transition: color 0.3s ease;
-}
-
-.navbar-nav .nav-link:hover {
-  color: #adb5bd !important;
-}
-
-/* Content Container */
-.container {
-  background: #ffffff;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  margin-top: 30px;
-}
-
-/* Paragraph Styling */
-p {
-  font-size: 1.1rem;
-  margin-bottom: 1rem;
+  background: url('https://www.transparenttextures.com/patterns/asfalt-dark.png') repeat, #0a0a0a;
+  font-family: 'Special Elite', monospace;
+  color: #f8f8f8;
+  padding-top: 70px;
 }
 
 /* Headings */
 h1, h2, h3 {
-  font-weight: 600;
-  color: #343a40;
+  color: #ff2e63;
+  text-shadow: 1px 1px 6px rgba(255, 46, 99, 0.8);
+  text-align: center;
+}
+
+/* Navbar */
+.navbar {
+  background: rgba(0, 0, 0, 0.8);
+  border-bottom: 2px solid #ff2e63;
+}
+
+.navbar-nav .nav-link {
+  color: white !important;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ff2e63 !important;
+  text-shadow: 0 0 5px #ff2e63;
+}
+
+/* Containers */
+.container {
+  background: rgba(30, 30, 30, 0.85);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 0 20px rgba(255, 46, 99, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(6px);
+  margin-bottom: 2rem;
+}
+
+/* Card */
+.card {
+  background: #111;
+  border: 2px dashed #ff2e63;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0 0 10px rgba(255, 46, 99, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 46, 99, 0.6);
+}
+
+.card img {
+  width: 100%;
+  border-bottom: 2px solid #ff2e63;
 }
 
 /* Buttons */
-.btn-primary {
-  background-color: #0d6efd;
-  border: none;
-  transition: background-color 0.3s ease;
-}
-
-.btn-primary:hover {
-  background-color: #0b5ed7;
-}
-
-/* Footer Styling */
-footer {
-  background-color: #212529;
-  color: white;
-  padding: 20px 0;
-  margin-top: 50px;
-}
-
-/* Responsive Text Centering */
-@media (max-width: 576px) {
-  .container {
-    text-align: center;
-  }
-}
-
-/* Base Styles */
-body {
-  background-color: white; /* Set page background to white */
-  color: black;             /* Set default text color to black */
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.6;
-  padding-top: 70px; /* Prevent navbar overlap */
-}
-
-/* Container Styling */
-.container,
-.container2 {
-  background-color: white;
-  color: black;
-  padding: 30px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Navbar - keep dark for contrast */
-.navbar {
-  background-color: #212529;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-/* Text inside cards and containers */
-.card,
-.card-content,
-.card-content p,
-.card-content h3 {
-  background-color: white;
-  color: black;
-}
-
-/* Optional: Ensure category tags are readable */
-.category {
-  background-color: lightcoral;
-  color: black;
-}
-
-/* Button Styling */
 .btn, .custom-btn {
-  background-color: #634B66;
+  background: #ff2e63;
   color: white;
-  font-family: 'Times New Roman', Times, serif;
-  transition: background-color 0.3s ease;
+  border: none;
+  border-radius: 6px;
+  padding: 0.6rem 1rem;
+  box-shadow: 0 0 10px #ff2e63;
+  transition: all 0.3s ease;
+  font-family: 'Special Elite', monospace;
 }
 
-.btn:hover, .custom-btn:hover {
-  background-color: #513a55;
+.btn:hover {
+  background: #fff;
+  color: #ff2e63;
+  box-shadow: 0 0 15px #ff2e63;
 }
 
-.intro{
+/* Footer */
+footer {
+  background: #111;
+  color: white;
   text-align: center;
+  padding: 1rem;
+  border-top: 2px solid #ff2e63;
+  font-size: 0.9rem;
 }
